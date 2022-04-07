@@ -7155,15 +7155,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b6f299b3cbd3e644bec83dea7e80883, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  t: {fileID: 0}
+  tHead: {fileID: 0}
+  rb: {fileID: 0}
+  playerCollider: {fileID: 0}
+  grounder: {fileID: 0}
+  slide: {fileID: 0}
+  mouseLook: {fileID: 0}
+  bob: {fileID: 0}
+  headPosition: {fileID: 0}
   hTemp: 0
   vTemp: 0
-  gravity: -40
+  h: 0
+  v: 0
   speed: 1
-  airControlBlockTimer: 0
-  airControl: 1
-  gTimer: 0
   inputDir: {x: 0, y: 0, z: 0}
+  vel: {x: 0, y: 0, z: 0}
+  gVel: {x: 0, y: 0, z: 0}
+  gDir: {x: 0, y: 0, z: 0}
+  gDirCross: {x: 0, y: 0, z: 0}
+  gDirCrossProject: {x: 0, y: 0, z: 0}
+  airControl: 1
+  airControlBlockTimer: 0
   jumpForce: {x: 0, y: 15, z: 0}
+  gTimer: 0
+  gravity: -40
+  climbState: 0
   climbTimer: 0
   climbStartPos: {x: 0, y: 0, z: 0}
   climbStartDir: {x: 0, y: 0, z: 0}
@@ -7192,22 +7209,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  gDirCross: {x: 0, y: 0, z: 0}
-  gDirCrossProject: {x: 0, y: 0, z: 0}
-  t: {fileID: 0}
-  tHead: {fileID: 0}
-  rb: {fileID: 0}
-  clldr: {fileID: 0}
-  grounder: {fileID: 0}
-  mouseLook: {fileID: 0}
-  bob: {fileID: 0}
-  headPosition: {fileID: 0}
-  vel: {x: 0, y: 0, z: 0}
-  h: 0
-  v: 0
-  gDir: {x: 0, y: 0, z: 0}
-  gVel: {x: 0, y: 0, z: 0}
-  climbState: 0
   poofVFX: {fileID: 1661340255121968, guid: 2e0d5536e42d3aa48b6e363997b6b9e4, type: 3}
   slamVFX: {fileID: 1334071670866236, guid: edf12e91890b8434eb8ea701f9bc40a2, type: 3}
 --- !u!4 &818277360
